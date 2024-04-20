@@ -22,4 +22,4 @@ wss.on('connection', function connection(ws) {
 });
 
 
-server.listen(PORT, `Server is listening on ${PORT} at ${new Date()}`);
+server.listen(PORT, () => console.log(`Server is listening on ${PORT} at ${new Date()}`));
